@@ -2,7 +2,7 @@
 
 int main(int argc, char* argv[]) {
     if (argc != 2) {
-        cerr << "Usage: " << argv[0] << " <graph_file>" << endl;
+        cout << "Usage: " << argv[0] << " <graph_file>" << endl;
         return 1;
     }
 
@@ -10,7 +10,7 @@ int main(int argc, char* argv[]) {
     try {
         file_to_graph(argv[1], G);
     } catch (const exception& e) {
-        cerr << e.what() << endl;
+        cout << e.what() << endl;
         return 1;
     }
 
